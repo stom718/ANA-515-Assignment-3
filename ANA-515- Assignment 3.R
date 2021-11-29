@@ -42,6 +42,7 @@ view(Newset)
 head(Newset)
 merged <- merge(x=Newset, y=us_state_info,by.x = "state",by.y = "state")
 head(merged)
+#10
 library(ggplot2)
 Plot<- ggplot(merged,aes(x = area, y = Freq)) + geom_point(aes(color=region))+
   labs( x = "Land area in Square miles", y = " Number of Storms in 1992")
